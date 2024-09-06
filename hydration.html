@@ -1,0 +1,21 @@
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<div id="app">
+  <!-- 리액트에서 DOM을 그려줄 영역 -->
+</div>
+
+<script type="text/babel">
+  function MyApp() {
+    return (
+      <section>
+        <h1>Hello React</h1>
+        <p>리액트가 그려주는 UI</p>
+      </section>
+    );
+  }
+
+  const container = document.querySelector('#app');
+  ReactDOM.createRoot(container).render(<MyApp />);
+</script>
